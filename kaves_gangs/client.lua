@@ -51,7 +51,7 @@ AddEventHandler("kaves_gangs:SpawnGangMembers", function()
             if v.Vehicles[a].created == false then
                 RequestModel(v.Vehicles[a].model)
                 while not HasModelLoaded(v.Vehicles[a].model) do Citizen.Wait(10) end
-                v.Vehicles[a].handle = CreateVehicle(v.Vehicles[a].model, v.Vehicles[a].coords.x, v.Vehicles[a].coords.y, v.Vehicles[a].coords.z, v.Vehicles[a].heading, true, false) -- elleme
+                v.Vehicles[a].handle = CreateVehicle(v.Vehicles[a].model, v.Vehicles[a].coords.x, v.Vehicles[a].coords.y, v.Vehicles[a].coords.z-1.0, v.Vehicles[a].heading, true, false) -- elleme
                 v.Vehicles[a].created = true 
                 SetVehicleModColor_1(v.Vehicles[a].handle, 1, v.Vehicles[a].color)
                 SetVehicleModColor_2(v.Vehicles[a].handle, 1, v.Vehicles[a].color)
@@ -68,7 +68,7 @@ AddEventHandler("kaves_gangs:SpawnGangMembers", function()
                 local model = v.PedModels[math.random(1, #v.PedModels)]
                 RequestModel(model)
                 while not HasModelLoaded(model) do Citizen.Wait(10) end
-                v.Peds[i].handle = CreatePed(26, model, v.Peds[i].coords.x, v.Peds[i].coords.y, v.Peds[i].coords.z-1.0, v.Peds[i].heading, true, false)  
+                v.Peds[i].handle = CreatePed(26, model, v.Peds[i].coords.x, v.Peds[i].coords.y, v.Peds[i].coords.z-1.0, v.Peds[i].heading, false, false)  
                 v.Peds[i].created = true 
                 SetPedRelationshipGroupHash(v.Peds[i].handle, v.GroupHash) 
                 GiveWeaponToPed(v.Peds[i].handle, v.Peds[i].weapon, 9999, false, true) 
