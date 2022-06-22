@@ -25,18 +25,8 @@ Config = {
     Grove = {
         GroupHash = "grove",
         PedModels = {"csb_ballasog", "g_f_y_ballas_01", "g_m_y_ballaeast_01", "g_m_y_ballaorig_01", "g_m_y_ballasout_01", "ig_ballasog"},
-        Peds = {
-           -- [1] = {handle = nil, created = false, coords = vector3(87.52, -1942.52, 20.76), heading = 278.04, weapon ="WEAPON_PISTOL", type = 1, anim = {dict = "", name = ""}, prop = {}},
-           -- [2] = {handle = nil, created = false, coords = vector3(87.52, -1942.52, 20.76), heading = 278.04, weapon ="WEAPON_PISTOL", type = 1, anim = {dict = "", name = ""}, prop = {}},
-          --  [3] = {handle = nil, created = false, coords = vector3(87.52, -1942.52, 20.76), heading = 278.04, weapon ="WEAPON_PISTOL", type = 1, anim = {dict = "", name = ""}, prop = {}},
-           -- [4] = {handle = nil, created = false, coords = vector3(87.52, -1942.52, 20.76), heading = 278.04, weapon ="WEAPON_PISTOL", type = 1, anim = {dict = "", name = ""}, prop = {}},
-         --   [5] = {handle = nil, created = false, coords = vector3(87.52, -1942.52, 20.76), heading = 278.04, weapon ="WEAPON_PISTOL", type = 1, anim = {dict = "", name = ""}, prop = {}},
-           -- [6] = {handle = nil, created = false, coords = vector3(87.52, -1942.52, 20.76), heading = 278.04, weapon ="WEAPON_PISTOL", type = 1, anim = {dict = "", name = ""}, prop = {}},
-           -- [2] = {handle = nil, created = false, coords = vector3(), heading = 0.0, weapon ="WEAPON_PISTOL", type = 2, anim = {name = ""}, prop = {}},
-        },
-        Vehicles = {
-           -- [1] = {handle = nil, created = false, coords = vector3(), heading = 0.0, model = "virgo2"},
-        }
+        Peds = {},
+        Vehicles = {}
 
     }
 
